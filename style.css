@@ -18,6 +18,11 @@ body {
   /* background-color: #60b347; */
 }
 
+/* @keyframes example {
+  from {background-color: red;}
+  to {background-color: rgb(243, 243, 227);}
+} */
+
 /* LAYOUT */
 header {
   position: relative;
