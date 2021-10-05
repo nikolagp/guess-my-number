@@ -6,20 +6,21 @@ let secretNumber = document.querySelector('.number').textContent;
 const message = document.querySelector('.message');
 let totalScore = document.querySelector('.score');
 let highScore = document.querySelector('.highscore');
+const againBtn = document.querySelector('.again');
 
 let currentScore = 20;
 highScore = 0;
+
+const resetGame = function () {
+  
+}
+
 // Finding random number
 const number = Number(Math.trunc(Math.random() * 20)); 
 secretNumber = number;
 console.log (secretNumber);
 
-// 
-const lostGame = function () {
-  if (guess < 0) {
 
-  }
-}
 
 // Event handler - Check!
 checkBtn.addEventListener('click', function() {
