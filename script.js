@@ -40,7 +40,7 @@ checkBtn.addEventListener('click', function() {
   // When the guess num is lower than the secret num
   } else if (guess < secretNumber) {
     if (currentScore > 1) {
-      message.textContent = 'Try with ⬆️ higer number';
+      message.textContent = 'Try with higer number ⏫';
       currentScore--;
       document.querySelector('.score').textContent = currentScore;
     } else {
@@ -51,7 +51,7 @@ checkBtn.addEventListener('click', function() {
   // When the guess num is higher than the secret num  
   } else {
     if (currentScore > 1) {
-      message.textContent = 'Try with ⬇️ lower number'
+      message.textContent = 'Try with lower number ⏬'
       currentScore--;
       document.querySelector('.score').textContent = currentScore;
     } else {
