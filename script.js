@@ -4,9 +4,10 @@ const checkBtn = document.querySelector('.check');
 // const inputNmbr = document.querySelector('.guess').value;
 //let secretNumber = document.querySelector('.number').textContent;
 const message = document.querySelector('.message');
-//let totalScore = document.querySelector('.score');
+// let totalScore = document.querySelector('.score');
 // let highScore = document.querySelector('.highscore');
 const againBtn = document.querySelector('.again');
+
 
 let currentScore = 20;
 let highscore = 0;
@@ -41,6 +42,8 @@ checkBtn.addEventListener('click', function() {
   } else if (guess < secretNumber) {
     if (currentScore > 1) {
       message.textContent = 'Try with higer number ⏫';
+      message.style.color = '#B29576';
+      document.querySelector('.guess').style.color = '#B29576';
       currentScore--;
       document.querySelector('.score').textContent = currentScore;
     } else {
@@ -51,7 +54,9 @@ checkBtn.addEventListener('click', function() {
   // When the guess num is higher than the secret num  
   } else {
     if (currentScore > 1) {
-      message.textContent = 'Try with lower number ⏬'
+      message.textContent = 'Try with lower number ⏬';
+      message.style.color = '#949400';
+      document.querySelector('.guess').style.color = '#949400';
       currentScore--;
       document.querySelector('.score').textContent = currentScore;
     } else {
@@ -66,9 +71,10 @@ againBtn.addEventListener('click', function() {
   currentScore = 20;
   secretNumber = Number(Math.trunc(Math.random() * 20) + 1);
   console.log(secretNumber)
+  message.textContent = '👀 Start guessing...';
   document.querySelector('.guess').value = '';
   document.querySelector('.score').textContent = currentScore;
-  document.body.style.backgroundColor = '#222';
+  document.body.style.backgroundColor = '#2f4f4f';
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.number').textContent = '?';
 })
