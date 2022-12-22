@@ -1,6 +1,6 @@
 # Guess My Number
 
-![Guess My Number Cover](https://github.com/nikolagp/bankist-web/blob/main/img/bankist.png?raw=true "Guess My Number Cover")
+![Guess My Number Cover](https://github.com/nikolagp/guess-my-number/blob/main/gmn_game.png?raw=true "Guess My Number Cover")
 
 Check it out deployed: https://bankist-web-jsapp.netlify.app 
 
